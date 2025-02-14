@@ -135,16 +135,6 @@ img.src = imagePath; // Set the image source
 img.alt = 'Slide Image'; // Optional alt text for images
 // Append the image to the slide
 slide.appendChild(img);
-// Add links to slide 9 (index 8 because of 0-based index)
-	
-if (index === 8) {
-const linkContainer = document.createElement('div');
-linkContainer.classList.add('link-container');
-// Add the links with unique classes for individual positioning
-linkContainer.innerHTML = `<a href="https://garystil.github.io/hello" class="slide-link"</a>`;
-// Append the link container to the slide
-slide.appendChild(linkContainer);
-}
 // Append the slide to the swiper-wrapper
 swiperWrapper.appendChild(slide);
 });
